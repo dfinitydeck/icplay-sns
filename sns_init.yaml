@@ -1,0 +1,271 @@
+name: ICPLAY
+
+description: >
+
+    ICPLAY is a web-based arcade platform where players compete in fun, skill-based games 
+    for real token rewards, powered by actual entry fees, not inflation.
+    Built on the Internet Computer, it works instantly, needs no wallet to start, 
+    and turns casual gameplay into a real prize economy for everyday users.
+
+# Path to the SNS Project logo on the local filesystem.
+logo: logo.png
+
+# URL to the dapp controlled by the SNS project.
+url: https://icplay.app
+
+NnsProposal:
+    title: "NNS Proposal to create an SNS named 'ICPLAY'"
+    url: "https://forum.dfinity.org/t/***"
+
+    summary:  |
+      # Summary
+      Proposal to create an SNS DAO for ICPLAY.
+
+      ## The SNS will be initialized with the following parameters
+      ** Distribution
+      * Total token supply - 300 Millions
+      * Allocated to treasury - 210 Millions (70%)
+      * Allocated to SNS sale - 54 Millions (18%)
+      * Allocated to developer - 36 Millions (12%)
+      * The Ledger Transaction fee - 0.001 PLAY
+      
+      ** Decentralization SWAP
+      * Min participation - 1 ICP
+      * Min participants - 10
+      * Min to be raised - 25,000 ICP
+      * Max to be raised - 120,000 ICP
+
+      ** Learn more
+      * [Website](https://icplay.app)
+      * [Whitepaper](https://icplay.gitbook.io/docs)
+      * [Github](https://github.com/dfinitydeck/icplay-dev)
+      * [X](https://x.com/ICPLAY_APP)
+
+# Controller principals
+fallback_controller_principals:
+    - vvimb-bfxs7-s6mb6-x266y-uljv6-rdppy-g775e-dhr2b-obt3h-gjjzz-tqe
+
+# The list of dapp canister(s)
+dapp_canisters:
+    
+    # Users(management)
+    - 5jxvr-fyaaa-aaaaf-qaslq-cai
+    # Token_Distributor
+    - 5au6n-tqaaa-aaaaf-qaska-cai
+    # Revenue_Ledger
+    - 5hvyz-6iaaa-aaaaf-qaskq-cai
+    # Game_Play_Your_Cards_Right_Client
+    - 4dyxl-hiaaa-aaaaf-qasmq-cai
+
+
+# Configuration of SNS tokens
+Token:
+    name: ICPLAY
+    symbol: PLAY
+    transaction_fee: 10_000 e8s
+    logo: logo.png
+
+# Configures SNS proposal-related fields
+Proposals:
+    rejection_fee: 100 token
+    initial_voting_period: 3 days
+    maximum_wait_for_quiet_deadline_extension: 1 day
+
+Neurons:
+    # The minimum amount of SNS tokens to stake a neuron.
+    minimum_creation_stake: 100 token
+
+Voting:
+    minimum_dissolve_delay: 1 week
+
+    MaximumVotingPowerBonuses:
+        DissolveDelay:
+            duration: 36 months
+            bonus: 100%
+        Age:
+            duration: 12 months
+            bonus: 20%
+
+    RewardRate: 
+        initial: 1%
+        final: 1%
+        transition_duration: 2 years
+
+Distribution:
+    Neurons:
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 1_000_000 tokens
+          memo: 0
+          dissolve_delay: 1 month
+          vesting_period: 6 months
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 1_000_000 tokens
+          memo: 1
+          dissolve_delay: 1 month
+          vesting_period: 9 months
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 1_000_000 tokens
+          memo: 2
+          dissolve_delay: 1 month
+          vesting_period: 12 months
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 2_000_000 tokens
+          memo: 3
+          dissolve_delay: 1 month
+          vesting_period: 15 months
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 2_000_000 tokens
+          memo: 4
+          dissolve_delay: 1 month
+          vesting_period: 18 months
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 2_000_000 tokens
+          memo: 5
+          dissolve_delay: 0 month
+          vesting_period: 21 months
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 1_000_000 tokens
+          memo: 6
+          dissolve_delay: 0 month
+          vesting_period: 24 months
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 1_000_000 tokens
+          memo: 7
+          dissolve_delay: 0 month
+          vesting_period: 27 months   
+        - principal: r26tx-yogoq-yzcnq-w5jqn-xnvw2-bgfzc-q65qh-a4hky-c5gxk-3piqq-rqe
+          stake: 1_000_000 tokens
+          memo: 8
+          dissolve_delay: 0 month
+          vesting_period: 30 months            
+        
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 1_000_000 tokens
+          memo: 9
+          dissolve_delay: 1 month
+          vesting_period: 6 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 1_000_000 tokens
+          memo: 10
+          dissolve_delay: 1 month
+          vesting_period: 9 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 1_000_000 tokens
+          memo: 11
+          dissolve_delay: 1 month
+          vesting_period: 12 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 2_000_000 tokens
+          memo: 12
+          dissolve_delay: 1 month
+          vesting_period: 15 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 2_000_000 tokens
+          memo: 13
+          dissolve_delay: 1 month
+          vesting_period: 18 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 2_000_000 tokens
+          memo: 14
+          dissolve_delay: 0 month
+          vesting_period: 21 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 1_000_000 tokens
+          memo: 15
+          dissolve_delay: 0 month
+          vesting_period: 24 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 1_000_000 tokens
+          memo: 16
+          dissolve_delay: 0 month
+          vesting_period: 27 months
+        - principal: uoibg-q6fng-fid7q-nmh37-36suf-djbly-ibk7y-bsavj-l4p6t-natoa-4qe
+          stake: 1_000_000 tokens
+          memo: 17
+          dissolve_delay: 0 month
+          vesting_period: 30 months
+        
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 1_000_000 tokens
+          memo: 18
+          dissolve_delay: 1 month
+          vesting_period: 6 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 1_000_000 tokens
+          memo: 18
+          dissolve_delay: 1 month
+          vesting_period: 9 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 1_000_000 tokens
+          memo: 19
+          dissolve_delay: 1 month
+          vesting_period: 12 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 2_000_000 tokens
+          memo: 20
+          dissolve_delay: 1 month
+          vesting_period: 15 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 2_000_000 tokens
+          memo: 21
+          dissolve_delay: 1 month
+          vesting_period: 18 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 2_000_000 tokens
+          memo: 22
+          dissolve_delay: 0 month
+          vesting_period: 21 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 1_000_000 tokens
+          memo: 23
+          dissolve_delay: 0 month
+          vesting_period: 24 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 1_000_000 tokens
+          memo: 24
+          dissolve_delay: 0 month
+          vesting_period: 27 months
+        - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
+          stake: 999_000 tokens
+          memo: 25
+          dissolve_delay: 0 month
+          vesting_period: 30 months 
+          
+        - principal: hntyz-lzla3-7tg6u-e6fzs-thsdq-tgzkx-mvec7-rdewd-vhixm-fvjro-nae
+          stake: 1_000 tokens
+          memo: 26
+          dissolve_delay: 0 month
+          vesting_period: 0 month   
+
+
+    # The initial SNS token balances of the various canisters of the SNS.
+    InitialBalances:
+        treasury: 210_000_000 tokens
+        swap: 54_000_000 tokens
+    total: 300_000_000 tokens
+
+Swap:
+    minimum_participants: 5
+    minimum_direct_participation_icp: 30_000 tokens
+    maximum_direct_participation_icp: 120_000 tokens
+    minimum_participant_icp: 5 tokens
+    maximum_participant_icp: 30_000 tokens
+
+    confirmation_text: >
+        I confirm my understanding of the responsibilities and risks
+        associated with participating in this token swap.
+
+    # A list of countries from which swap participation should not be allowed.
+    restricted_countries:
+        - KP # NORTH KOREA
+        - IR # IRAN
+        - CU # CUBA
+        - SY # SYRIAN ARAB REPUBLIC
+
+    VestingSchedule:
+        events: 2
+        interval: 1 week
+    duration: 10 days
+
+    # Whether Neurons' Fund participation is requested.
+    neurons_fund_participation: false
