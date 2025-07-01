@@ -32,7 +32,7 @@ NnsProposal:
       ** Decentralization SWAP
       * Min participation - 1 ICP
       * Min participants - 10
-      * Min to be raised - 25,000 ICP
+      * Min to be raised - 20,000 ICP
       * Max to be raised - 120,000 ICP
 
       ** Learn more
@@ -257,10 +257,14 @@ Swap:
 
     # A list of countries from which swap participation should not be allowed.
     restricted_countries:
+        - AF # AFGHANISTAN
         - KP # NORTH KOREA
-        - IR # IRAN
         - CU # CUBA
         - SY # SYRIAN ARAB REPUBLIC
+        - IR # IRAN
+        - IQ # IRAQ
+        - LB # LEBANON
+        - LY # LIBYA
 
     VestingSchedule:
         events: 2
