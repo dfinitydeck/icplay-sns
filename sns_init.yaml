@@ -48,13 +48,13 @@ fallback_controller_principals:
 # The list of dapp canister(s)
 dapp_canisters:
     
-    # Users(management)
+    # Indexer
     - 5jxvr-fyaaa-aaaaf-qaslq-cai
-    # Token_Distributor
+    # User (management)
     - 5au6n-tqaaa-aaaaf-qaska-cai
-    # Revenue_Ledger
+    # Platform
     - 5hvyz-6iaaa-aaaaf-qaskq-cai
-    # Game_Play_Your_Cards_Right_Client
+    # Gamebox_Play_Your_Cards_Right_Client
     - 4dyxl-hiaaa-aaaaf-qasmq-cai
 
 
