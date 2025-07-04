@@ -63,7 +63,7 @@ Token:
     name: ICPLAY
     symbol: PLAY
     transaction_fee: 10_000 e8s
-    logo: logo.png
+    logo: token.png
 
 # Configures SNS proposal-related fields
 Proposals:
