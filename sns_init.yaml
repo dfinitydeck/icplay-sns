@@ -76,8 +76,7 @@ Neurons:
     minimum_creation_stake: 100 token
 
 Voting:
-    minimum_dissolve_delay: 1 month
-
+    minimum_dissolve_delay: 1 week
     MaximumVotingPowerBonuses:
         DissolveDelay:
             duration: 36 months
@@ -85,7 +84,6 @@ Voting:
         Age:
             duration: 12 months
             bonus: 20%
-
     RewardRate: 
         initial: 1%
         final: 1%
