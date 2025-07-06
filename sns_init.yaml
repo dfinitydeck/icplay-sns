@@ -76,7 +76,7 @@ Neurons:
     minimum_creation_stake: 100 token
 
 Voting:
-    minimum_dissolve_delay: 1 week
+    minimum_dissolve_delay: 1 month
 
     MaximumVotingPowerBonuses:
         DissolveDelay:
