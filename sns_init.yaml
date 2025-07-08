@@ -224,13 +224,13 @@ Distribution:
           dissolve_delay: 0 month
           vesting_period: 27 months
         - principal: 3qvda-evrah-4ovjz-yfefn-enmbu-qflvj-heauc-mw6wu-jauy6-xykjc-fae
-          stake: 999_000 tokens
+          stake: 998_000 tokens
           memo: 25
           dissolve_delay: 0 month
           vesting_period: 30 months 
           
         - principal: hntyz-lzla3-7tg6u-e6fzs-thsdq-tgzkx-mvec7-rdewd-vhixm-fvjro-nae
-          stake: 1_000 tokens
+          stake: 2_000 tokens
           memo: 26
           dissolve_delay: 0 month
           vesting_period: 0 month   
