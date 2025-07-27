@@ -87,7 +87,7 @@ Voting:
     RewardRate: 
         initial: 1%
         final: 1%
-        transition_duration: 3 years
+        transition_duration: 2 years
 
 Distribution:
     Neurons:
@@ -247,7 +247,7 @@ Swap:
     minimum_direct_participation_icp: 20_000 tokens
     maximum_direct_participation_icp: 150_000 tokens
     minimum_participant_icp: 5 tokens
-    maximum_participant_icp: 50_000 tokens
+    maximum_participant_icp: 100_000 tokens
 
     confirmation_text: >
         I confirm my understanding of the responsibilities and risks
@@ -267,6 +267,8 @@ Swap:
     VestingSchedule:
         events: 4
         interval: 2 month
+    
+    start_time: 12:00 UTC
     duration: 10 days
 
     # Whether Neurons' Fund participation is requested.
